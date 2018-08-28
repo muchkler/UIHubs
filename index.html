@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIHub</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="icon" href="apple-icon.png"/>
+</head>
+
+<body class="animated slideInLeft">
+    
+        <div class="logo"><img src="images/logo.png"></div> 
+<div class="navbar">
+    <ul>
+        <li class="animateborder"><a href="#">Home</a></li>
+        <li class="animateborder"><a href="#processPage">Process</a></li>
+        <li class="animateborder"><a href="#resourcePage">Resources</a></li>
+    </ul>
+</div>
+
+<div class="mainBgDIV"><img src="images/background.png" class="mainBG"></div>
+<div class="descText">
+    <h1>Redesign user interfaces.</h1>
+    <p>Receive user interfaces gathered from all around the internet and redesign them to improve your UI skills. The user interfaces sent are gathered from various resources that are listed in the 'resources' section of this website.</p>
+    <div id="mc_embed_signup">
+            <form action="https://github.us19.list-manage.com/subscribe/post?u=f9f47f043d25d526e34610342&amp;id=b24d1d3cf2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                
+            <div class="mc-field-group">
+                <input type="email" value="" name="EMAIL" class="required_email" id="mce-EMAIL" placeholder="Enter your e-mail address...">
+            </div>
+                <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f9f47f043d25d526e34610342_b24d1d3cf2" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
+            </div>
+</div>
+
+<div class="processPage" id="processPage">
+    <h2>Challenge yourself with the best user interfaces around.</h2>
+
+<div class="processArea">
+    <div class="emailDesign">
+        <div class="emailImg"><img src="images/email.png"></div>
+        <p class="processDesc"></p>We will be sending you one user interface to work on per week.</p>
+    </div>
+
+    <div class="createDesign">
+        <div class="createImg"><img src="images/create.png"></div>
+        <p class="processDesc"></p>We will be sending you one user interface to work on per week.</p>
+    </div>
+
+    <div class="shareDesign">
+        <div class="shareImg"><img src="images/share.png"></div>
+        <p class="processDesc"></p>We will be sending you one user interface to work on per week.</p>
+    </div>
+</div>
+</div>
+
+<div class="resourcesPage" id="resourcePage">
+    <h3>Resources</h3>
+
+    <div class="resourcesArea">
+        <div class="dribbbleDesign">
+            <div class="dribbbleImg"><img src="images/r2.png"></div>
+            <h4>Dribbble</h4>
+            <div class="resourceDesc"><p class="resourceDesc"></p>Shots from popular and up and coming designers in the Dribbble community, your best resource to discover and connect with designers worldwide.</p></div>
+        </div>
+
+        <div class="behanceDesign">
+                <div class="behanceeImg"><img src="images/r3.png" ></div>
+                <h4>Behance</h4>
+                <div class="resourceDesc"><p class="resourceDesc"></p>Showcase and discover the latest work from top online portfolios by creative professionals across industries.</p><div class="resourceDesc">
+        </div>
+    </div>
+</div>
+
+
+    <div class="footerDesc"><p class="footerDesc">Created by <span class="portfolioLink"><a href="https://muchkler.github.io/moeminportfolio/" class="portfolioLink">Moemin Mamdouh</a></span></p></div>
+
+
+
+    <script src="script.js"></script>    
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script> 
+    <script>
+    // Changing the defaults
+    window.sr = ScrollReveal({ reset: true });
+    
+    // Customizing a reveal set
+    sr.reveal('.processPage, .resourcesPage', {duration:1500, origin:'bottom', distance: '50px'});   
+        
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+        <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>    
+</body>
+</html>
